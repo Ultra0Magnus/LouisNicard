@@ -3,79 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Research Project</title>
+    <title>Louis Nicard - Transport & Civil Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #4f46e5; /* indigo-600 */
+            border: 4px solid #f3f4f6; /* gray-100 */
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-100 text-gray-800">
 
     <!-- Header -->
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-6 py-4">
-            <h1 class="text-3xl font-bold text-gray-900">Your Name</h1>
-            <p class="text-lg text-gray-600">Computational Neuroscience Researcher</p>
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900">Louis Nicard</h1>
+                <p class="text-lg text-indigo-600">Transport & Civil Engineer</p>
+            </div>
+            <nav class="hidden md:block">
+                <a href="#profile" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md">Profile</a>
+                <a href="#experience" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md">Experience</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md">Projects</a>
+                <a href="#education" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md">Education</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md">Contact</a>
+            </nav>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="container mx-auto px-6 py-12">
-        
-        <!-- Project Title -->
-        <section class="mb-12">
-            <h2 class="text-4xl font-bold text-center mb-2 text-indigo-600">The Impact of Neural Oscillations on Short-Term Memory</h2>
-            <p class="text-center text-gray-500">Published: May 2024</p>
-        </section>
 
-        <!-- Abstract -->
-        <section class="bg-white p-8 rounded-lg shadow-lg mb-12">
-            <h3 class="text-2xl font-bold mb-4">Abstract</h3>
-            <p class="text-lg leading-relaxed">
-                This research investigates the critical role of neural oscillations, specifically in the theta and gamma bands, in the encoding and retrieval of information in short-term memory. By analyzing EEG data from subjects performing memory-based tasks, we found a significant correlation between the power of gamma oscillations during encoding and subsequent memory recall performance. Our findings suggest a mechanistic model where theta-gamma coupling serves as a key coordinator for neural assemblies involved in memory formation.
-            </p>
-        </section>
-
-        <!-- Key Sections -->
-        <div class="grid md:grid-cols-2 gap-8">
-            <!-- Methodology -->
-            <div class="bg-white p-8 rounded-lg shadow-lg">
-                <h3 class="text-2xl font-bold mb-4">Methodology</h3>
-                <p class="mb-4">
-                    We employed a mixed-methods approach, combining quantitative EEG analysis with qualitative participant feedback. Participants were tasked with a series of digital memory games while their neural activity was recorded...
+        <!-- Profile Section -->
+        <section id="profile" class="flex flex-col md:flex-row items-center bg-white p-8 rounded-lg shadow-lg mb-12">
+            <div class="md:w-1/4 flex justify-center mb-6 md:mb-0">
+                <!-- You can replace this placeholder with a real photo -->
+                <img src="https://placehold.co/150x150/E0E7FF/4338CA?text=LN" alt="Photo of Louis Nicard" class="rounded-full shadow-md">
+            </div>
+            <div class="md:w-3/4 md:pl-8">
+                <h2 class="text-3xl font-bold mb-4 text-indigo-700">About Me</h2>
+                <p class="text-lg leading-relaxed">
+                    Currently pursuing a Master's degree in Transport Engineering at Imperial College London, as part of a double-degree program with ESTP. I am seeking a full-time graduate position in the fields of transport engineering, civil engineering, or energy.
                 </p>
-                <a href="methodology.html" class="inline-block bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">Read More &rarr;</a>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-10 text-indigo-700">Work Experience</h2>
+            <div class="relative pl-8">
+                <!-- Vertical timeline -->
+                <div class="absolute left-0 h-full border-l-2 border-indigo-200" style="margin-left: -21px;"></div>
+
+                <!-- Item 1 -->
+                <div class="mb-8 pl-4 relative timeline-item">
+                    <p class="text-sm text-gray-500">February 2025 - March 2025</p>
+                    <h3 class="text-xl font-bold">Imperial College London & World Bank</h3>
+                    <p class="font-semibold text-indigo-600">Research Project</p>
+                    <p class="mt-2">Feasibility study (technical analysis with ArcGIS and cost assessment) for a project to install photovoltaic panels within highway rights-of-way in Bangladesh.</p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="mb-8 pl-4 relative timeline-item">
+                    <p class="text-sm text-gray-500">June 2024 - August 2024</p>
+                    <h3 class="text-xl font-bold">ITAS</h3>
+                    <p class="font-semibold text-indigo-600">Pre-Sales Intern</p>
+                    <p class="mt-2">Assisted the Programs team. Used VBA and PowerQuery, drafted a technical brief for a tower tender (Bouygues Telecom), and conducted a life cycle analysis and carbon footprint assessment.</p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="mb-8 pl-4 relative timeline-item">
+                    <p class="text-sm text-gray-500">July 2023 - August 2023</p>
+                    <h3 class="text-xl font-bold">Systra France</h3>
+                    <p class="font-semibold text-indigo-600">Tender Assistant Intern</p>
+                    <p class="mt-2">Assisted in reviewing the Tender Documents (DCE) for the AMOS automated metro project in Toulouse.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-10 text-indigo-700">Notable Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                 <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold mb-3">Photovoltaic Panels on Highways</h3>
+                    <p class="text-gray-600 mb-4">Technical and economic feasibility study for deploying solar energy along highway rights-of-way in Bangladesh.</p>
+                    <a href="methodology_en.html" class="inline-block text-indigo-600 font-bold hover:underline">View details &rarr;</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold mb-3">TIPE - Material Resistance</h3>
+                    <p class="text-gray-600 mb-4">Group research project on the resistance of an aluminum beam under various stresses for the competitive entrance exams to French "Grandes Écoles".</p>
+                     <a href="#" class="inline-block text-gray-400 font-bold cursor-not-allowed">Details to come</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Education & Skills Section -->
+        <section id="education" class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- Education -->
+            <div>
+                <h2 class="text-3xl font-bold text-center mb-10 text-indigo-700">Education</h2>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="mb-4">
+                        <p class="font-bold">Imperial College London</p>
+                        <p class="text-sm text-gray-600">2024 - 2025 | MSc Transport</p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="font-bold">ESTP (École Spéciale des Travaux Publics)</p>
+                        <p class="text-sm text-gray-600">2022 - 2025 | Master of Engineering in Civil Engineering</p>
+                    </div>
+                    <div>
+                        <p class="font-bold">Lycée Fénelon Sainte Marie</p>
+                        <p class="text-sm text-gray-600">2020 - 2022 | Preparatory Classes MPSI - MP</p>
+                    </div>
+                </div>
             </div>
 
-            <!-- Results -->
-            <div class="bg-white p-8 rounded-lg shadow-lg">
-                <h3 class="text-2xl font-bold mb-4">Results</h3>
-                <p class="mb-4">
-                    The primary finding was a strong positive correlation (r=0.78, p < 0.01) between gamma-band power during the encoding phase and the accuracy of memory recall. Participants with stronger theta-gamma phase coupling also demonstrated faster reaction times.
-                </p>
-                <!-- You could add a chart image here -->
-                 <img src="https://placehold.co/600x400/E2E8F0/4A5568?text=Sample+Chart" alt="Sample chart showing results" class="rounded-lg mt-4">
-
+            <!-- Skills -->
+            <div>
+                <h2 class="text-3xl font-bold text-center mb-10 text-indigo-700">Skills</h2>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="font-bold text-lg mb-2">Software</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">Python</span>
+                        <span class="bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">VBA</span>
+                        <span class="bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">PowerQuery</span>
+                        <span class="bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">MS Office Suite</span>
+                         <span class="bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">Linux</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-100 text-green-800 py-1 px-3 rounded-full">French (Native)</span>
+                        <span class="bg-green-100 text-green-800 py-1 px-3 rounded-full">English (Fluent, TOEIC 980)</span>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <!-- Full Report Download -->
-        <section class="text-center mt-12">
-            <h3 class="text-2xl font-bold mb-4">Read the Full Report</h3>
-            <p class="mb-4">For a detailed analysis, please download the full PDF report.</p>
-            <a href="#" class="inline-block bg-gray-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-900 transition duration-300">Download PDF</a>
         </section>
-
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white mt-12 py-6">
-        <div class="container mx-auto px-6 text-center text-gray-600">
-            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
-            <p>Contact: <a href="mailto:your.email@example.com" class="text-indigo-600 hover:underline">your.email@example.com</a></p>
+    <footer id="contact" class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+            <p class="mb-4">Feel free to contact me for any opportunities or collaborations.</p>
+            <div class="flex justify-center gap-6 mb-4">
+                <a href="mailto:louis.nicard@estp.fr" class="flex items-center gap-2 hover:text-indigo-300">
+                    <i class="fas fa-envelope"></i> louis.nicard@estp.fr
+                </a>
+                <a href="tel:+33656707126" class="flex items-center gap-2 hover:text-indigo-300">
+                    <i class="fas fa-phone"></i> +33 6 56 70 71 26
+                </a>
+            </div>
+            <div class="flex justify-center gap-6 text-2xl">
+                <!-- Add your real links here -->
+                <a href="#" class="hover:text-indigo-300"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:text-indigo-300"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="mt-6 text-sm text-gray-400">&copy; 2025 Louis Nicard. All Rights Reserved.</p>
         </div>
     </footer>
 
