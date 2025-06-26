@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Research Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-3xl font-bold text-gray-900">Your Name</h1>
+            <p class="text-lg text-gray-600">Computational Neuroscience Researcher</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        
+        <!-- Project Title -->
+        <section class="mb-12">
+            <h2 class="text-4xl font-bold text-center mb-2 text-indigo-600">The Impact of Neural Oscillations on Short-Term Memory</h2>
+            <p class="text-center text-gray-500">Published: May 2024</p>
+        </section>
+
+        <!-- Abstract -->
+        <section class="bg-white p-8 rounded-lg shadow-lg mb-12">
+            <h3 class="text-2xl font-bold mb-4">Abstract</h3>
+            <p class="text-lg leading-relaxed">
+                This research investigates the critical role of neural oscillations, specifically in the theta and gamma bands, in the encoding and retrieval of information in short-term memory. By analyzing EEG data from subjects performing memory-based tasks, we found a significant correlation between the power of gamma oscillations during encoding and subsequent memory recall performance. Our findings suggest a mechanistic model where theta-gamma coupling serves as a key coordinator for neural assemblies involved in memory formation.
+            </p>
+        </section>
+
+        <!-- Key Sections -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Methodology -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Methodology</h3>
+                <p class="mb-4">
+                    We employed a mixed-methods approach, combining quantitative EEG analysis with qualitative participant feedback. Participants were tasked with a series of digital memory games while their neural activity was recorded...
+                </p>
+                <a href="methodology.html" class="inline-block bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">Read More &rarr;</a>
+            </div>
+
+            <!-- Results -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Results</h3>
+                <p class="mb-4">
+                    The primary finding was a strong positive correlation (r=0.78, p < 0.01) between gamma-band power during the encoding phase and the accuracy of memory recall. Participants with stronger theta-gamma phase coupling also demonstrated faster reaction times.
+                </p>
+                <!-- You could add a chart image here -->
+                 <img src="https://placehold.co/600x400/E2E8F0/4A5568?text=Sample+Chart" alt="Sample chart showing results" class="rounded-lg mt-4">
+
+            </div>
+        </div>
+
+        <!-- Full Report Download -->
+        <section class="text-center mt-12">
+            <h3 class="text-2xl font-bold mb-4">Read the Full Report</h3>
+            <p class="mb-4">For a detailed analysis, please download the full PDF report.</p>
+            <a href="#" class="inline-block bg-gray-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-900 transition duration-300">Download PDF</a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-12 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-600">
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+            <p>Contact: <a href="mailto:your.email@example.com" class="text-indigo-600 hover:underline">your.email@example.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
