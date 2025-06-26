@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Report - Photovoltaic Panels on Highways</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            flex-shrink: 0; /* Prevent header from shrinking */
+        }
+        main {
+            flex-grow: 1; /* Allow main content to fill remaining space */
+            border: none;
+            overflow: hidden; /* Hide iframe scrollbars if any */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md w-full z-10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold text-gray-900">Project Report</h1>
+                <p class="text-md text-gray-600">Photovoltaic Panels on Highways</p>
+            </div>
+            <a href="index.html" class="bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">&larr; Back to Home</a>
+        </div>
+    </header>
+
+    <!-- PDF Viewer -->
+    <main>
+        <!-- Replace 'rapport-solaire.pdf' with the actual name of your PDF file -->
+        <iframe src="rapport-solaire.pdf" title="Project Report PDF"></iframe>
+    </main>
+
+</body>
+</html>
