@@ -51,7 +51,17 @@
     <main class="container mx-auto px-6 py-12">
 
         <!-- Profile Section -->
-        <section id="profile" class="flex flex-col md:flex-row items-center bg-white p-8 rounded-lg shadow-lg mb-12">
+        <section id="profile" class="relative text-white p-8 rounded-lg shadow-lg mb-12 overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0">
+                <img src="background.jpg" alt="Description de l'image de fond" class="w-full h-full object-cover">
+    <!-- Overlay pour la lisibilité -->
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+
+<!-- Contenu de la section -->
+            <div class="relative z-10 flex flex-col md:flex-row items-center">
+
             <div class="md:w-1/4 flex justify-center mb-6 md:mb-0">
                 <!-- You can replace this placeholder with a real photo -->
                 <img src="photo_louis.jpg" alt="Photo of Louis Nicard" class="rounded-full shadow-md">
