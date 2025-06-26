@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louis Nicard - Ingénieur Transport & Génie Civil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #4f46e5; /* indigo-600 */
+            border: 4px solid #f3f4f6; /* gray-100 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- En-tête -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900">Louis Nicard</h1>
+                <p class="text-lg text-indigo-600">Ingénieur Transport & Génie Civil</p>
+            </div>
+            <nav class="hidden md:block">
+                <a href="#profil" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md">Profil</a>
+                <a href="#experience" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md">Expérience</a>
+                <a href="#projets" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md">Projets</a>
+                <a href="#formation" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md">Formation</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md">Contact</a>
+            </nav>
+            <!-- Sélecteur de langue -->
+            <div class="text-sm">
+                <a href="index.html" class="text-gray-600 hover:text-indigo-600">EN</a> | <span class="font-bold">FR</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu Principal -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Section Profil -->
+        <section id="profil" class="flex flex-col md:flex-row items-center bg-white p-8 rounded-lg shadow-lg mb-12">
+            <div class="md:w-1/4 flex justify-center mb-6 md:mb-0">
+                <img src="photo_louis.jpg" alt="Photo de Louis Nicard" class="rounded-full shadow-md">
+            </div>
+            <div class="md:w-3/4 md:pl-8">
+                <h2 class="text-3xl font-bold mb-4 text-indigo-700">À propos de moi</h2>
+                <p class="text-lg leading-relaxed">
+                    Je viens de terminer mon Master en Ingénierie des Transports à l'Imperial College London, dans le cadre d'un double-diplôme avec l'ESTP (Paris, France). Je suis à la recherche d'un CDI de sortie d'école dans les domaines de l'ingénierie des transports, du BTP ou des énergies.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section Expérience -->
+        <section id="experience" class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-10 text-indigo-700">Expérience Professionnelle</h2>
+            <div class="relative pl-8">
+                <!-- Ligne de temps verticale -->
+                <div class="absolute left-0 h-full border-l-2 border-indigo-200" style="margin-left: -21px;"></div>
+
+                <!-- Item 1 -->
+                <div class="mb-8 pl-4 relative timeline-item">
+                    <p class="text-sm text-gray-500">Mai 2025 - Juillet 2025</p>
+                    <h3 class="text-xl font-bold">Imperial College London & World Bank</h3>
+                    <p class="font-semibold text-indigo-600">Projet de recherche en groupe</p>
+                    <p class="mt-2">Étude de faisabilité (analyse technique avec ArcGIS et analyse de coûts) pour un projet d'installation de panneaux photovoltaïques dans l'emprise des autoroutes au Bangladesh.</p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="mb-8 pl-4 relative timeline-item">
+                    <p class="text-sm text-gray-500">Juin 2024 - Août 2024</p>
+                    <h3 class="text-xl font-bold">ITAS</h3>
+                    <p class="font-semibold text-indigo-600">Stagiaire Avant-vente</p>
+                    <p class="mt-2">Assistance à l'équipe Programmes. Utilisation de VBA et PowerQuery, rédaction d'un mémoire technique pour un appel d'offre de pylônes (Bouygues Telecom) et réalisation de l'analyse de cycle de vie et bilan carbone.</p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="mb-8 pl-4 relative timeline-item">
+                    <p class="text-sm text-gray-500">Juillet 2023 - Août 2023</p>
+                    <h3 class="text-xl font-bold">Systra France</h3>
+                    <p class="font-semibold text-indigo-600">Stagiaire Assistant Appel d'offre</p>
+                    <p class="mt-2">Aide à la revue de Dossier de Consultation des Entreprises (DCE) sur le projet de métro automatique AMOS à Toulouse.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projets" class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-10 text-indigo-700">Projets Notables</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Projet 1 -->
+                 <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold mb-3">Production d'énergie durable dans l'emprise autoroutière au Bangladesh</h3>
+                    <p class="text-gray-600 mb-4">Étude de faisabilité technique et économique pour le déploiement de l'énergie solaire le long des autoroutes au Bangladesh.</p>
+                    <a href="methodologie_fr.html" class="inline-block text-indigo-600 font-bold hover:underline">Voir les détails &rarr;</a>
+                </div>
+                <!-- Projet 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold mb-3">TIPE - Résistance des Matériaux</h3>
+                    <p class="text-gray-600 mb-4">Projet de recherche en groupe sur la résistance d'une poutre en aluminium soumise à différentes contraintes pour les concours aux grandes écoles.</p>
+                     <a href="#" class="inline-block text-gray-400 font-bold cursor-not-allowed">Détails à venir</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Formation & Compétences -->
+        <section id="formation" class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- Formation -->
+            <div>
+                <h2 class="text-3xl font-bold text-center mb-10 text-indigo-700">Formation</h2>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="mb-4">
+                        <p class="font-bold">Imperial College London, Londres, UK</p>
+                        <p class="text-sm text-gray-600">2024 - 2025 | MSc Transport</p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="font-bold">ESTP (École Spéciale des Travaux Publics), Paris, France</p>
+                        <p class="text-sm text-gray-600">2022 - 2025 | Diplôme d'ingénieur en Génie Civil</p>
+                    </div>
+                    <div>
+                        <p class="font-bold">Lycée Fénelon Sainte Marie, Paris, France</p>
+                        <p class="text-sm text-gray-600">2020 - 2022 | Classes préparatoires MPSI - MP</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétences -->
+            <div>
+                <h2 class="text-3xl font-bold text-center mb-10 text-indigo-700">Compétences</h2>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="font-bold text-lg mb-2">Informatique</h3>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">Python</span>
+                        <span class="bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">ArcGIS</span>
+                        <span class="bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">VBA</span>
+                        <span class="bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">PowerQuery</span>
+                        <span class="bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">Pack Office</span>
+                         <span class="bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">Bases de Linux</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Langues</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-100 text-green-800 py-1 px-3 rounded-full">Français (Natif)</span>
+                        <span class="bg-green-100 text-green-800 py-1 px-3 rounded-full">Anglais (Courant, TOEIC 980)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer id="contact" class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-4">Contactez-moi</h2>
+            <p class="mb-4">N'hésitez pas à me contacter pour toute opportunité ou collaboration.</p>
+            <div class="flex justify-center gap-6 mb-4">
+                <a href="mailto:louis.nicard@estp.fr" class="flex items-center gap-2 hover:text-indigo-300">
+                    <i class="fas fa-envelope"></i> louis.nicard@estp.fr
+                </a>
+                <a href="tel:+33656707126" class="flex items-center gap-2 hover:text-indigo-300">
+                    <i class="fas fa-phone"></i> +33 6 56 70 71 26
+                </a>
+            </div>
+            <div class="flex justify-center gap-6 text-2xl">
+                <!-- Ajoutez vos vrais liens ici -->
+                <a href="#" class="hover:text-indigo-300"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/louis-n-86918b134/" class="hover:text-indigo-300"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="mt-6 text-sm text-gray-400">&copy; 2025 Louis Nicard. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
