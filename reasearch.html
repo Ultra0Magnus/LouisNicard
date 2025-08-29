@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Project Details - Louis Nicard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for the embedded PDF to take up most of the screen */
+        .pdf-container {
+            width: 100%;
+            height: 80vh; /* 80% of the viewport height */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900">Louis Nicard</h1>
+                <p class="text-lg text-indigo-600">Transport & Civil Engineer</p>
+            </div>
+            <nav>
+                <a href="index.html#profile" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md">Back to Main Page</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <section id="project-details">
+            <h2 class="text-3xl font-bold text-center mb-4 text-indigo-700">Project Report</h2>
+            <p class="text-xl text-center mb-10">The Impact of CAVs : A case study of Paris's ring road</p>
+
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <embed src="CID06025197-Research Paper-Quddus.pdf" type="application/pdf" class="pdf-container"/>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mt-6 text-sm text-gray-400">&copy; 2025 Louis Nicard. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
