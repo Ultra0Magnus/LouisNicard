@@ -50,21 +50,26 @@
     <!-- Contenu Principal -->
     <main class="container mx-auto px-6 py-12">
 
-        <!-- Section Profil -->
-        <section id="profil" class="flex flex-col md:flex-row items-center bg-white p-8 rounded-lg shadow-lg mb-12">
+        <!-- Profile Section -->
+        <section id="profile" class="relative text-white p-8 rounded-lg shadow-lg mb-12 overflow-hidden">
             <!-- Background Image -->
             <div class="absolute inset-0">
                 <img src="background.jpg" alt="Description de l'image de fond" class="w-full h-full object-cover">
     <!-- Overlay pour la lisibilité -->
                 <div class="absolute inset-0 bg-black opacity-50"></div>
             </div>
+
+<!-- Contenu de la section -->
+            <div class="relative z-10 flex flex-col md:flex-row items-center">
+
             <div class="md:w-1/4 flex justify-center mb-6 md:mb-0">
-                <img src="photo_louis.jpg" alt="Photo de Louis Nicard" class="rounded-full shadow-md">
+                <!-- You can replace this placeholder with a real photo -->
+                <img src="photo_louis.jpg" alt="Photo of Louis Nicard" class="rounded-full shadow-md">
             </div>
             <div class="md:w-3/4 md:pl-8">
-                <h2 class="text-3xl font-bold mb-4 text-indigo-700">À propos de moi</h2>
+                <h2 class="text-3xl font-bold mb-4 text-white">About Me</h2>
                 <p class="text-lg leading-relaxed">
-                    Je viens de terminer mon Master en Ingénierie des Transports à l'Imperial College London, dans le cadre d'un double-diplôme avec l'ESTP (Paris, France). Je suis à la recherche d'un CDI de sortie d'école dans les domaines de l'ingénierie des transports, du BTP ou des énergies.
+                   Ayant tout juste terminé mon master en Ingénierie des Transports à l'Imperial College de Londres, en double-diplôme avec l'ESTP Paris, je recherche actuellement un poste dans le domaine des transports.
                 </p>
             </div>
         </section>
